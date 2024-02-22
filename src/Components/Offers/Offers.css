@@ -44,6 +44,7 @@
   justify-content: flex-end;
   padding-top: 50px;
 }
+
 @media only screen and (width < 600px){
   .offers{
     width: auto;
@@ -53,13 +54,13 @@
     padding: 0px 10px;
   }
   .offers-left h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
   .offers-left {
-    margin-top: 2em;
+    margin-top: 1.5em;
   }
   .offers-right img {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -78,6 +79,6 @@
     margin-top: 2em;
   }
   .offers-right img {
-    width: 50%;
+    width: 100%;
   }
 }
