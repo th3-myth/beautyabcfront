@@ -1,5 +1,5 @@
 .nav {
-  display: flex;
+  display: inline-block;
   justify-content: space-around;
   padding: 16px;
   background: black;
@@ -39,9 +39,9 @@
 .nav-menu hr{
   border: none;
   width: 80%;
-height: 3px;
-border-radius: 10px;
-background: #FF4141;
+  height: 3px;
+  border-radius: 10px;
+  background: #FF4141;
 }
 .nav-login-cart {
   display: flex;
@@ -79,11 +79,15 @@ background: #FF4141;
 
 @media only screen and (width < 500px) {
   .nav{
-    display: block;
+    display: inline-block;
     box-shadow: none;
   }
   .nav-login-cart{
     justify-content: end;
+  }
+  
+  .nav-logo img{
+    width: 150px;
   }
   .nav p{
     font-size: 1em;
@@ -92,13 +96,17 @@ background: #FF4141;
   .nav-menu{
     gap: 20px;
     padding: 0;
+    margin: 10px 20px 10px 10px;
     font-size: 16px;
   }
 }
 
 @media only screen and (width < 600px) and (width > 500px) {
   .nav{
-    display: block;
+    display: inline-block;
+  }
+  .nav-logo img{
+    width: 150px;
   }
   .nav-login-cart{
     justify-content: end;
@@ -110,7 +118,7 @@ background: #FF4141;
 
 @media only screen and (width >= 600px){
   .nav{
-    display: block;
+    display: inline-block;
   }
   .nav-menu li {
     padding: 0;
@@ -128,7 +136,7 @@ background: #FF4141;
 
 @media only screen and (width >= 1200px){
   .nav {
-    display: flex;
+  display: inline-flex;
   justify-content: space-around;
   padding: 16px;
 }

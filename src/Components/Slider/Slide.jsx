@@ -1,4 +1,5 @@
 import React from 'react'; 
+import './image2.css'
 import 'bootstrap/dist/css/bootstrap.css'; 
 import Carousel from 'react-bootstrap/Carousel'; 
 import bg1 from '../Media/1.jpg'
@@ -17,7 +18,7 @@ import bg14 from '../Media/14.jpg'
 
 export default function App() { 
 return ( 
-	<div style={{ display: 'block', width: 700, padding: 30 }}> 
+	<div className='Wallm' style={{ display: 'block', padding: 30 }}> 
 	<Carousel> 
 		<Carousel.Item interval={1500}> 
 		<img className="d-block w-100" src={bg1} alt="One" /> 

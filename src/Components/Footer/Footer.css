@@ -60,22 +60,36 @@
   -o-border-radius: 10px;
 }
 @media screen and (width < 400px){
-  .navbar-nav a{
-      padding-right: 1.2rem;
-      padding-left: 1.2rem;
+  .footer {
+    align-items: center;
   }
-  .banner-title{
-      font-size: 5rem;
+  .footer-logo img {
+    width: 250px;
   }
-  .banner form{
-      margin-top: 1.4rem;
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
+  .footer-links {
+    display: inline-block;
+  }
+  .footer-logo{
+    gap: 10px;
   }
 }
 
 @media only screen and (width < 600px) {
+  .footer {
+    align-items: center;
+  }
+  .footer-logo img {
+    width: 250px;
+  }
+  .footer-links {
+    display: inline-block;
+  }
+  .footer-logo{
+    gap: 10px;
+  }
+}
+
+@media only screen and (width >= 600px){
   .footer {
     align-items: center;
   }
@@ -90,28 +104,17 @@
   }
 }
 
-@media only screen and (width >= 600px){
-  .nav{
-    display: block;
-  }
-  .nav-menu li {
-    padding: 0;
-  }
-  .nav-menu {
-    justify-content: space-evenly;
-  }
-  .nav-login-cart{
-    justify-content: end;
-  }
-  .nav p{
-    font-size: 1em;
-  }
-}
-
 @media only screen and (width >= 1200px){
-  .nav {
-    display: flex;
-  justify-content: space-around;
-  padding: 16px;
-}
+  .footer {
+    align-items: center;
+  }
+  .footer-logo p {
+    font-size: 30px;
+  }
+  .footer-links {
+    display: inline-block;
+  }
+  .footer-logo{
+    gap: 10px;
+  }
 }
