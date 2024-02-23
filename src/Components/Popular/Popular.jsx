@@ -1,7 +1,6 @@
 import React from 'react'
 import './Popular.css'
 import Item from '../Item/Item'
-
 const Popular = (props) => {
   return (
     <div className='popular'>

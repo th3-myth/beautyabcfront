@@ -4,11 +4,14 @@ import Shop from "./Pages/Shop";
 import Cart from "./Pages/Cart";
 import Product from "./Pages/Product";
 import Footer from "./Components/Footer/Footer";
-import ShopCategory from "./Pages/ShopCategory";
-import hair_banner from "./Components/Assets/banner_hair.png";
-import face_banner from "./Components/Assets/banner_face.png";
-import makeovers_banner from "./Components/Assets/banner_makeovers.png";
+// import ShopCategory from "./Pages/ShopCategory";
+// import hair_banner from "./Components/Assets/banner_hair.png";
+// import face_banner from "./Components/Assets/banner_face.png";
+// import makeovers_banner from "./Components/Assets/banner_makeovers.png";
 import LoginSignup from "./Pages/LoginSignup";
+import Dresses from "./Pages/Dresses";
+import Makeovers from "./Pages/Makeovers";
+import Jewellery from "./Pages/Jewellery";
 
 function App() {
 
@@ -18,9 +21,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Shop gender="all" />} />
-          <Route path="/jewellery" element={<ShopCategory banner={face_banner} category="jewellery" />} />
-          <Route path="/dresses" element={<ShopCategory banner={hair_banner} category="dresses" />} />
-          <Route path="/makeovers" element={<ShopCategory banner={makeovers_banner} category="makeovers" />} />
+          <Route path="/jewellery" element={<Jewellery/>} />
+          <Route path="/dresses" element={<Dresses/>} />
+          <Route path="/makeovers" element={<Makeovers/>} />
           <Route path='/product' element={<Product />}>
             <Route path=':productId' element={<Product />} />
           </Route>
@@ -34,3 +37,7 @@ function App() {
 }
 
 export default App;
+
+// {<ShopCategory banner={hair_banner} category="dresses" />}
+// {<ShopCategory banner={face_banner} category="jewellery" />} 
+// {<ShopCategory banner={makeovers_banner} category="makeovers" />}
